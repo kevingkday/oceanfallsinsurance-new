@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ocean Falls Insurance | AI Risk Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#ffeac0",
+              "secondary-fixed-dim": "#a7c8ff",
+              "on-secondary-fixed-variant": "#1f477b",
+              "background": "#00142b",
+              "on-tertiary-fixed-variant": "#594400",
+              "surface": "#00142b",
+              "inverse-primary": "#006875",
+              "on-primary": "#00363d",
+              "on-error": "#690005",
+              "surface-container-lowest": "#000e23",
+              "inverse-on-surface": "#163152",
+              "surface-bright": "#203a5b",
+              "surface-container": "#012040",
+              "tertiary-container": "#fec931",
+              "on-surface": "#d4e3ff",
+              "surface-container-high": "#0e2b4b",
+              "primary-fixed": "#9cf0ff",
+              "on-background": "#d4e3ff",
+              "surface-container-highest": "#1b3656",
+              "on-tertiary": "#3e2e00",
+              "tertiary-fixed": "#ffdf96",
+              "on-tertiary-fixed": "#251a00",
+              "surface-container-low": "#001c3a",
+              "primary-container": "#00e5ff",
+              "outline": "#849396",
+              "secondary-fixed": "#d5e3ff",
+              "secondary": "#a7c8ff",
+              "on-secondary": "#003061",
+              "surface-dim": "#00142b",
+              "primary": "#c3f5ff",
+              "on-surface-variant": "#bac9cc",
+              "error": "#ffb4ab",
+              "tertiary-fixed-dim": "#f3bf26",
+              "on-primary-fixed-variant": "#004f58",
+              "outline-variant": "#3b494c",
+              "on-secondary-fixed": "#001b3c",
+              "primary-fixed-dim": "#00daf3",
+              "secondary-container": "#1f477b",
+              "error-container": "#93000a",
+              "on-secondary-container": "#93b6f1",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed": "#001f24",
+              "on-primary-container": "#00626e",
+              "surface-variant": "#1b3656",
+              "surface-tint": "#00daf3",
+              "on-tertiary-container": "#6f5500",
+              "inverse-surface": "#d4e3ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #00142b; color: #d4e3ff; font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(27, 54, 86, 0.6); backdrop-filter: blur(12px); }
+        .hero-gradient { background: radial-gradient(circle at top right, rgba(0, 229, 255, 0.15), transparent 50%), radial-gradient(circle at bottom left, rgba(195, 245, 255, 0.05), transparent 50%); }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<div id="site-nav"></div>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+<video id="heroVideoA" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" style="transition: opacity 0.5s ease-in-out; opacity: 1;" autoplay muted playsinline>
+<source src="https://assets.cdn.filesafe.space/5i5ntz30Bub6ScFgS3xS/media/69bd868d9bd1399683b0bc9c.mp4" type="video/mp4"/>
+</video>
+<video id="heroVideoB" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" style="transition: opacity 0.5s ease-in-out; opacity: 0;" muted playsinline>
+<source src="https://assets.cdn.filesafe.space/5i5ntz30Bub6ScFgS3xS/media/69bd868d9bd1399683b0bc9c.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="max-w-7xl mx-auto px-8 w-full relative z-10 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-8">
+<span class="inline-block py-1 px-3 rounded-full bg-primary-container/20 text-primary-fixed-dim text-xs font-bold tracking-widest uppercase mb-6 font-label">
+                        Advanced Protection
+                    </span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white font-headline leading-[1.1] mb-8 tracking-tighter">
+                        Insurance for the <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Age of AI.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-body leading-relaxed mb-10">
+                        Safeguarding innovation with bespoke coverage for algorithmic bias, performance guarantees, and modern business risks.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="contact.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(0,229,255,0.4)] transition-all inline-block text-center no-underline">
+                            Get a Specialized Quote
+                        </a>
+<a href="ai-risk-services.html" class="bg-surface-variant/40 backdrop-blur-md border border-outline-variant/20 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-surface-variant/60 transition-all inline-block text-center no-underline">
+                            Explore Risk Models
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialized AI Risk Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-bold text-white font-headline mb-4 tracking-tight">Specialized AI Risk Solutions</h2>
+<p class="text-on-surface-variant text-lg">Our deep-sea approach to underwriting ensures every neural layer is protected from evolving digital threats.</p>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-primary-fixed-dim text-5xl opacity-20" style="font-variation-settings: 'FILL' 1;">fluid</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group relative p-8 rounded-xl glass border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined text-primary" data-icon="monitoring">monitoring</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 font-headline">Model Underperformance</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Compensation for unmet contractual AI guarantees and technical failure remediation costs.</p>
+<a class="inline-flex items-center text-primary-fixed-dim font-semibold hover:gap-2 transition-all" href="ai-model-underperformance.html">
+                            Policy Details <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group relative p-8 rounded-xl glass border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-tertiary/5 rounded-full blur-3xl group-hover:bg-tertiary/10 transition-colors"></div>
+<div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined text-tertiary" data-icon="balance">balance</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 font-headline">Algorithmic Bias</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Comprehensive coverage for AI-driven employment discrimination claims and automated decisioning liabilities.</p>
+<a class="inline-flex items-center text-tertiary font-semibold hover:gap-2 transition-all" href="algorithmic-bias.html">
+                            Bias Mitigation <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group relative p-8 rounded-xl glass border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary/5 rounded-full blur-3xl group-hover:bg-secondary/10 transition-colors"></div>
+<div class="mb-6 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined text-secondary" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 font-headline">Regulatory Support</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Expert legal navigation through evolving global standards and data privacy frameworks for AI systems.</p>
+<a class="inline-flex items-center text-secondary font-semibold hover:gap-2 transition-all" href="regulatory-compliance.html">
+                            Compliance Hub <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Ecosystem -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-4 sticky top-32">
+<h2 class="text-4xl font-bold text-white font-headline mb-6 tracking-tight">Core Ecosystem</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+  Beyond artificial intelligence, we provide industry-leading protection for every facet of modern enterprise — from boardroom liability to complex construction projects.
+</p>
+<div class="p-6 rounded-xl bg-surface-container-high/50 border border-outline-variant/10">
+  <div class="flex items-center gap-4 mb-4">
+    <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+      <span class="material-symbols-outlined text-primary text-xl">verified</span>
+    </div>
+    <span class="font-bold text-white font-headline uppercase tracking-widest text-sm">Strategic Partner</span>
+  </div>
+  <p class="text-sm text-on-surface-variant">AI risk placement powered by <strong class="text-primary">Munich Re aiSure™</strong> — pioneering indemnity for AI performance errors and algorithmic liabilities.</p>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- CyberRisk Elite -->
+<a href="cyberrisk-elite.html" class="p-8 rounded-2xl bg-surface-container-high border border-outline-variant/5 group hover:bg-surface-bright transition-colors cursor-pointer no-underline block">
+  <div class="flex justify-between items-start mb-8">
+    <span class="material-symbols-outlined text-primary-fixed-dim text-4xl">fingerprint</span>
+    <span class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">High Priority</span>
+  </div>
+  <h4 class="text-2xl font-bold text-white mb-3 font-headline">CyberRisk Elite</h4>
+  <p class="text-on-surface-variant mb-6">AI-enhanced ransomware defense and data breach recovery for tech-first organizations.</p>
+  <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_right_alt</span>
+</a>
+<!-- D&O / E&O -->
+<a href="directors-officers.html" class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/5 group hover:bg-surface-bright transition-colors cursor-pointer no-underline block">
+  <div class="flex justify-between items-start mb-8">
+    <span class="material-symbols-outlined text-tertiary-fixed-dim text-4xl">shield_person</span>
+    <span class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Essential</span>
+  </div>
+  <h4 class="text-2xl font-bold text-white mb-3 font-headline">D&amp;O / E&amp;O</h4>
+  <p class="text-on-surface-variant mb-6">Executive liability and professional indemnity for boardrooms navigating high-tech transitions.</p>
+  <span class="material-symbols-outlined text-tertiary-fixed-dim opacity-0 group-hover:opacity-100 transition-opacity">arrow_right_alt</span>
+</a>
+<!-- Construction & Builders Risk -->
+<a href="builders-risk.html" class="p-8 rounded-2xl bg-surface-container-low border border-outline-variant/5 group hover:bg-surface-bright transition-colors cursor-pointer no-underline block">
+  <div class="flex justify-between items-start mb-8">
+    <span class="material-symbols-outlined text-secondary text-4xl">construction</span>
+    <span class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">High Value</span>
+  </div>
+  <h4 class="text-2xl font-bold text-white mb-3 font-headline">Construction & Infrastructure</h4>
+  <p class="text-on-surface-variant mb-6">Builders risk, wrap-up liability, and trades coverage — enhanced by AI-powered site monitoring.</p>
+  <span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_right_alt</span>
+</a>
+<!-- Specialty Commercial -->
+<a href="political-risk.html" class="p-8 rounded-2xl bg-surface-container-high border border-outline-variant/5 group hover:bg-surface-bright transition-colors cursor-pointer no-underline block">
+  <div class="flex justify-between items-start mb-8">
+    <span class="material-symbols-outlined text-primary-fixed-dim text-4xl">public</span>
+    <span class="text-xs font-bold text-on-surface-variant tracking-widest uppercase">Complex Risk</span>
+  </div>
+  <h4 class="text-2xl font-bold text-white mb-3 font-headline">Specialty Commercial</h4>
+  <p class="text-on-surface-variant mb-6">Political risk, environmental liability, marine cargo, and niche industry verticals.</p>
+  <span class="material-symbols-outlined text-primary-fixed-dim opacity-0 group-hover:opacity-100 transition-opacity">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bridging AI Innovation & Global Capital -->
+<section class="py-32 relative overflow-hidden" id="ai-bridge">
+<div class="absolute inset-0 bg-surface-container-low/50"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<!-- Header -->
+<div class="text-center max-w-4xl mx-auto mb-20">
+  <div class="flex items-center justify-center gap-3 mb-6">
+    <div class="w-12 h-1 bg-gradient-to-r from-transparent to-primary"></div>
+    <span class="text-xs font-bold tracking-[0.2em] uppercase text-primary-fixed-dim">Our Approach</span>
+    <div class="w-12 h-1 bg-gradient-to-r from-primary to-transparent"></div>
+  </div>
+  <h2 class="text-4xl md:text-5xl font-bold text-white font-headline leading-tight mb-8">Bridging the Gap Between <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">AI Innovation and Global Capital</span></h2>
+  <p class="text-xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto">We provide specialized brokerage services to navigate the complexities of AI risk. Through our partnership with industry leaders like <strong class="text-white">Munich Re</strong>, we facilitate access to the <strong class="text-primary">aiSure™</strong> program—providing comprehensive indemnity for AI performance errors and algorithmic liabilities.</p>
+</div>
+
+<!-- Workflow Diagram: The Ocean Falls Advantage -->
+<div class="mb-20">
+  <div class="flex items-center justify-center gap-2 mb-10">
+    <span class="material-symbols-outlined text-tertiary-fixed-dim text-xl">route</span>
+    <span class="text-sm font-bold tracking-widest uppercase text-tertiary-fixed-dim">The Ocean Falls Advantage</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-0 items-stretch max-w-5xl mx-auto">
+    <!-- Step 1 -->
+    <div class="relative group">
+      <div class="bg-surface-container-high rounded-2xl md:rounded-r-none p-6 border border-outline-variant/10 h-full flex flex-col items-center text-center group-hover:border-primary/30 transition-all">
+        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary text-2xl">psychology</span></div>
+        <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2">Step 1</span>
+        <h5 class="text-white font-bold font-headline text-sm">Client AI Model</h5>
+        <p class="text-on-surface-variant text-xs mt-2 leading-relaxed">Your AI system, algorithm, or automated decision engine.</p>
+      </div>
+      <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 bg-surface-container-high rounded-full border border-primary/30 items-center justify-center">
+        <span class="material-symbols-outlined text-primary text-sm">arrow_forward</span>
+      </div>
+      <div class="md:hidden flex justify-center py-2"><span class="material-symbols-outlined text-primary/40 rotate-90">arrow_forward</span></div>
+    </div>
+    <!-- Step 2 -->
+    <div class="relative group">
+      <div class="bg-surface-container-high rounded-2xl md:rounded-none p-6 border border-outline-variant/10 h-full flex flex-col items-center text-center group-hover:border-tertiary-fixed-dim/30 transition-all">
+        <div class="w-14 h-14 rounded-xl bg-tertiary-fixed-dim/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-tertiary-fixed-dim text-2xl">policy</span></div>
+        <span class="text-xs font-bold tracking-widest text-tertiary-fixed-dim uppercase mb-2">Step 2</span>
+        <h5 class="text-white font-bold font-headline text-sm">Ocean Falls Technical Review</h5>
+        <p class="text-on-surface-variant text-xs mt-2 leading-relaxed">We assess, document, and present a transparent risk profile.</p>
+      </div>
+      <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 bg-surface-container-high rounded-full border border-tertiary-fixed-dim/30 items-center justify-center">
+        <span class="material-symbols-outlined text-tertiary-fixed-dim text-sm">arrow_forward</span>
+      </div>
+      <div class="md:hidden flex justify-center py-2"><span class="material-symbols-outlined text-tertiary-fixed-dim/40 rotate-90">arrow_forward</span></div>
+    </div>
+    <!-- Step 3 -->
+    <div class="relative group">
+      <div class="bg-surface-container-high rounded-2xl md:rounded-none p-6 border border-outline-variant/10 h-full flex flex-col items-center text-center group-hover:border-secondary/30 transition-all">
+        <div class="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-secondary text-2xl">verified</span></div>
+        <span class="text-xs font-bold tracking-widest text-secondary uppercase mb-2">Step 3</span>
+        <h5 class="text-white font-bold font-headline text-sm">Placement in aiSure™ Program</h5>
+        <p class="text-on-surface-variant text-xs mt-2 leading-relaxed">We facilitate placement with Munich Re's pioneering AI coverage.</p>
+      </div>
+      <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-6 h-6 bg-surface-container-high rounded-full border border-secondary/30 items-center justify-center">
+        <span class="material-symbols-outlined text-secondary text-sm">arrow_forward</span>
+      </div>
+      <div class="md:hidden flex justify-center py-2"><span class="material-symbols-outlined text-secondary/40 rotate-90">arrow_forward</span></div>
+    </div>
+    <!-- Step 4 -->
+    <div class="group">
+      <div class="bg-surface-container-high rounded-2xl md:rounded-l-none p-6 border border-outline-variant/10 h-full flex flex-col items-center text-center group-hover:border-primary/30 transition-all">
+        <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4"><span class="material-symbols-outlined text-primary text-2xl">shield</span></div>
+        <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2">Result</span>
+        <h5 class="text-white font-bold font-headline text-sm">Secured Balance Sheet Protection</h5>
+        <p class="text-on-surface-variant text-xs mt-2 leading-relaxed">Comprehensive indemnity for AI performance errors.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Two Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+  <!-- Card 1: Expert Risk Placement -->
+  <div class="group relative p-10 rounded-2xl glass border border-outline-variant/10 hover:border-primary/30 transition-all duration-500 overflow-hidden">
+    <div class="absolute -right-8 -top-8 w-40 h-40 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-2xl">search_insights</span>
+        </div>
+        <h4 class="text-xl font-bold text-white font-headline">Expert Risk Placement</h4>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6">We don't just find a policy; we help you present a transparent risk profile to top-tier insurers. We ensure your AI systems meet the rigorous technical and ethical standards required for programs like <strong class="text-primary">aiSure™</strong>, including checks for bias and hallucinations.</p>
+      <div class="flex items-center gap-2 text-sm text-primary-fixed-dim font-semibold">
+        <span class="material-symbols-outlined text-sm">check_circle</span>
+        <span>Increases the likelihood of coverage approval and favorable premiums</span>
+      </div>
+    </div>
+  </div>
+  <!-- Card 2: Adaptive Coverage Management -->
+  <div class="group relative p-10 rounded-2xl glass border border-outline-variant/10 hover:border-tertiary-fixed-dim/30 transition-all duration-500 overflow-hidden">
+    <div class="absolute -right-8 -top-8 w-40 h-40 bg-tertiary/5 rounded-full blur-3xl group-hover:bg-tertiary/10 transition-colors"></div>
+    <div class="relative z-10">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center">
+          <span class="material-symbols-outlined text-tertiary-fixed-dim text-2xl">autorenew</span>
+        </div>
+        <h4 class="text-xl font-bold text-white font-headline">Adaptive Coverage Management</h4>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed mb-6">AI models are probabilistic and systematic, meaning they evolve over time. As your broker, we provide ongoing advisory to ensure your coverage scales and adapts as your models experience data drift or enter new use cases, preventing gaps in your protection.</p>
+      <div class="flex items-center gap-2 text-sm text-tertiary-fixed-dim font-semibold">
+        <span class="material-symbols-outlined text-sm">check_circle</span>
+        <span>Prevents policy obsolescence as your AI technology evolves</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- aiSure™ Co-Branding & Stat -->
+<div class="bg-surface-container-high/60 backdrop-blur-xl rounded-2xl p-10 border border-outline-variant/10 flex flex-col md:flex-row items-center justify-between gap-8">
+  <div class="flex items-center gap-6">
+    <div class="p-4 rounded-xl bg-primary/5 border border-primary/10">
+      <span class="text-sm font-bold text-primary uppercase tracking-widest font-headline">Access to</span>
+      <div class="text-2xl font-black text-white font-headline mt-1">Munich Re <span class="text-primary">aiSure™</span></div>
+    </div>
+    <div class="hidden md:block w-px h-16 bg-outline-variant/20"></div>
+    <div class="hidden md:block">
+      <p class="text-3xl font-black text-primary font-headline mb-1">High-Frequency, Low-Severity</p>
+      <p class="text-sm text-on-surface-variant">aiSure™ covers AI performance errors in daily operations—events that standard CGL and E&O policies explicitly exclude.</p>
+    </div>
+  </div>
+  <a href="contact.html" class="shrink-0 bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-sm hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all whitespace-nowrap no-underline">Discuss AI Coverage →</a>
+</div>
+
+</div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="nav.js"></script>
+<script>
+(function() {
+  const videoA = document.getElementById('heroVideoA');
+  const videoB = document.getElementById('heroVideoB');
+  let active = videoA;
+  let standby = videoB;
+  let transitioning = false;
+
+  function onTimeUpdate() {
+    if (transitioning) return;
+    if (active.duration && active.currentTime >= active.duration - 0.5) {
+      transitioning = true;
+      // Preload standby from the start
+      standby.currentTime = 0;
+      standby.play();
+      // Crossfade
+      active.style.opacity = '0';
+      standby.style.opacity = '1';
+      // After transition completes, swap roles
+      setTimeout(function() {
+        active.pause();
+        active.currentTime = 0;
+        const prev = active;
+        active = standby;
+        standby = prev;
+        transitioning = false;
+      }, 550);
+    }
+  }
+
+  videoA.addEventListener('timeupdate', onTimeUpdate);
+  videoB.addEventListener('timeupdate', onTimeUpdate);
+})();
+</script>
+</body></html>
