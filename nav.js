@@ -445,201 +445,184 @@
       document.body.appendChild(chat);
     }
 
-    // GoHighLevel Voice Assistant Widget
-    if (!document.querySelector('script[data-widget-id="69bdbaf7db148045986963f5"]')) {
+    // GoHighLevel Voice Assistant Widget (Hidden Container)
+    let voiceWidgetFound = false;
+    if (!document.getElementById('voice-widget-container')) {
+      const voiceContainer = document.createElement('div');
+      voiceContainer.id = 'voice-widget-container';
+      voiceContainer.className = 'hidden';
+      voiceContainer.style.display = 'none';
+
       const voice = document.createElement('script');
       voice.src = 'https://widgets.leadconnectorhq.com/loader.js';
       voice.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
       voice.setAttribute('data-widget-id', '69bdbaf7db148045986963f5');
-      document.body.appendChild(voice);
+      
+      voiceContainer.appendChild(voice);
+      document.body.appendChild(voiceContainer);
     }
 
-    // ── GHL Widget Theme Customization ──
-    // CSS Variable Inheritance for both chat widgets
-    const widgetStyles = document.createElement('style');
-    widgetStyles.id = 'ghl-widget-theme';
-    widgetStyles.textContent = `
-      chat-widget {
-        --chat-widget-header-color: #0e2b4b !important;
-        --chat-widget-primary-color: #00e5ff !important;
-        --chat-widget-background-color: rgba(0, 20, 43, 0.95) !important;
-        --ion-color-primary: #00e5ff !important;
-        --ion-color-primary-rgb: 0, 229, 255 !important;
-        --ion-color-primary-contrast: #00363d !important;
-      }
-
-      /* Custom Voice Assistant Button */
-      #ofi-voice-trigger {
-        position: fixed;
-        bottom: 24px;
-        left: 24px;
-        z-index: 9990;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        background: linear-gradient(135deg, #00e5ff 0%, #00daf3 50%, #c3f5ff 100%);
-        color: #00363d;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 20px rgba(0, 229, 255, 0.35), 0 0 0 0 rgba(0, 229, 255, 0.4);
-        transition: transform 0.2s ease, box-shadow 0.3s ease;
-        opacity: 0;
-        pointer-events: none;
-        animation: ofi-pulse 2.5s ease-in-out infinite;
-      }
-      #ofi-voice-trigger:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 30px rgba(0, 229, 255, 0.5);
-        animation: none;
-      }
-      #ofi-voice-trigger:active {
-        transform: scale(0.95);
-      }
-      #ofi-voice-trigger.ofi-ready {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      #ofi-voice-trigger svg {
-        width: 24px;
-        height: 24px;
-        fill: currentColor;
-      }
-      /* Tooltip */
-      #ofi-voice-trigger::after {
-        content: 'Speak with AI Assistant';
-        position: absolute;
-        left: calc(100% + 12px);
-        top: 50%;
-        transform: translateY(-50%);
-        background: #0e2b4b;
-        color: #c3f5ff;
-        font-family: 'Inter', sans-serif;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 6px 12px;
-        border-radius: 8px;
-        white-space: nowrap;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.2s ease;
-        border: 1px solid rgba(0, 229, 255, 0.15);
-      }
-      #ofi-voice-trigger:hover::after {
-        opacity: 1;
-      }
-      @keyframes ofi-pulse {
-        0%, 100% { box-shadow: 0 4px 20px rgba(0, 229, 255, 0.35), 0 0 0 0 rgba(0, 229, 255, 0.4); }
-        50% { box-shadow: 0 4px 20px rgba(0, 229, 255, 0.35), 0 0 0 10px rgba(0, 229, 255, 0); }
-      }
-    `;
-    document.head.appendChild(widgetStyles);
-
-    // Create custom Voice Assistant button
-    const voiceBtn = document.createElement('button');
-    voiceBtn.id = 'ofi-voice-trigger';
-    voiceBtn.setAttribute('aria-label', 'Speak with AI Voice Assistant');
-    voiceBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>`;
-    document.body.appendChild(voiceBtn);
-
-    // Shadow DOM penetration — poll for widgets, hide voice bubble, bind custom trigger
-    let voiceBound = false;
-    const bindWidgets = setInterval(() => {
-      const widgets = document.querySelectorAll('chat-widget');
+    // Custom Generic Event Listener for Voice Activation (Like kevinday.ai)
+    let isVoiceInitializing = false;
+    document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('.ofi-voice-btn, #ofi-voice-trigger, #test-voice-btn');
+      if (!trigger) return;
       
-      // We need at least 2 widgets: first = chat, second = voice
-      if (widgets.length < 2) return;
+      e.preventDefault();
       
-      widgets.forEach((widget, index) => {
-        if (!widget.shadowRoot) return;
+      // Debounce lock to prevent double-clicks triggering multiple microphone prompts
+      if (isVoiceInitializing || trigger.disabled) return;
+      isVoiceInitializing = true;
 
-        // Second widget (index 1) is the voice assistant
-        const isVoice = index === 1;
+      const originalText = trigger.innerText;
+      if (trigger.innerText && trigger.innerText.trim() !== '') {
+        trigger.innerText = 'INITIALIZING...';
+      }
 
-        // For the voice widget: hide EVERYTHING and bind custom button
-        if (isVoice && !voiceBound) {
-          // Inject aggressive CSS into Shadow DOM to hide ALL default UI
-          if (!widget.shadowRoot.querySelector('#ofi-hide-voice-bubble')) {
-            const style = document.createElement('style');
-            style.id = 'ofi-hide-voice-bubble';
-            style.textContent = `
-              * {
-                opacity: 0 !important;
-                pointer-events: none !important;
-                position: fixed !important;
-                left: -9999px !important;
-                width: 0 !important;
-                height: 0 !important;
-                overflow: hidden !important;
+      let attempts = 0;
+      const tryClickWidget = setInterval(() => {
+        attempts++;
+        const widgets = document.querySelectorAll('chat-widget');
+        
+        widgets.forEach(widget => {
+          if (widget.shadowRoot && !voiceWidgetFound) {
+            // Target the Voice widget explicitly by its internal phone icon class
+            const phoneIcon = widget.shadowRoot.querySelector('.lc_text-widget--phone-icon, [aria-label="Select to start the voice call"]');
+            if (phoneIcon) {
+              phoneIcon.click();
+              voiceWidgetFound = true;
+            }
+          }
+        });
+
+        // Fallback if the first method fails
+        if (!voiceWidgetFound && widgets.length >= 1) {
+          widgets.forEach(widget => {
+            if (widget.shadowRoot && !voiceWidgetFound) {
+              const chatBubble = widget.shadowRoot.querySelector('.lc_text-widget--bubble, #lc_text-widget--btn');
+              if (!chatBubble) {
+                const anyClickable = widget.shadowRoot.querySelector('.lc_text-widget--embedded, .widget-open-icon');
+                if (anyClickable) {
+                  anyClickable.click();
+                  voiceWidgetFound = true;
+                }
               }
-            `;
-            widget.shadowRoot.appendChild(style);
-          }
-
-          // Also hide the outer chat-widget element itself for the voice bubble
-          widget.style.cssText = 'position:fixed!important;left:-9999px!important;width:0!important;height:0!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important;';
-
-          // Find any clickable trigger inside the shadow DOM
-          const bubble = widget.shadowRoot.querySelector(
-            '#lc_text-widget--btn, .lc_text-widget--bubble, [class*="bubble"], [class*="launcher"], [class*="btn"], button, [role="button"]'
-          );
-
-          if (bubble) {
-            // Temporarily restore pointer-events on the trigger so .click() works
-            bubble.style.cssText = 'pointer-events:auto!important;';
-
-            // Bind custom button click to hidden GHL trigger
-            voiceBtn.onclick = (e) => {
-              e.preventDefault();
-              // Briefly unhide widget so GHL's internal logic can open
-              widget.style.cssText = '';
-              // Remove the aggressive hide from shadow DOM
-              const hideStyle = widget.shadowRoot.querySelector('#ofi-hide-voice-bubble');
-              if (hideStyle) hideStyle.remove();
-              // Click the internal trigger
-              bubble.click();
-            };
-          } else {
-            // No bubble found, just click the widget itself
-            voiceBtn.onclick = (e) => {
-              e.preventDefault();
-              widget.style.cssText = '';
-              const hideStyle = widget.shadowRoot.querySelector('#ofi-hide-voice-bubble');
-              if (hideStyle) hideStyle.remove();
-              widget.click();
-            };
-          }
-
-          // Reveal custom button
-          requestAnimationFrame(() => {
-            voiceBtn.classList.add('ofi-ready');
+            }
           });
-
-          voiceBound = true;
         }
 
-        // For all widgets: inject theme overrides into Shadow DOM
-        if (!widget.shadowRoot.querySelector('#ofi-shadow-theme')) {
+        if (voiceWidgetFound) {
+          clearInterval(tryClickWidget);
+          if (trigger.innerText && trigger.innerText.trim() !== '') {
+            trigger.innerText = 'CONNECTED';
+          }
+          // Disable the button to prevent overlapped calls
+          trigger.classList.add('opacity-50', 'cursor-not-allowed', 'pointer-events-none');
+          trigger.disabled = true;
+        }
+
+        if (attempts >= 20 && !voiceWidgetFound) {
+          clearInterval(tryClickWidget);
+          isVoiceInitializing = false;
+          if (trigger.innerText && trigger.innerText.trim() !== '') {
+            trigger.innerText = 'WIDGET NOT READY - TRY AGAIN';
+          }
+          setTimeout(() => { if (originalText) trigger.innerText = originalText; }, 2000);
+        }
+      }, 500);
+    });
+
+    // Inject Custom High-End Chat Button (kevinday.ai style)
+    const customChatBtnId = 'ofi-custom-chat-trigger';
+    if (!document.getElementById(customChatBtnId)) {
+        const customChatBtn = document.createElement('button');
+        customChatBtn.id = customChatBtnId;
+        customChatBtn.className = 'fixed bottom-6 right-6 z-[9990] flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary-container border border-cyan-400/50 hover:border-cyan-300 transition-all duration-500 shadow-[0_0_30px_rgba(0,229,255,0.3)] hover:shadow-[0_0_40px_rgba(0,229,255,0.6)] group hover:scale-105 cursor-pointer';
+        customChatBtn.innerHTML = `
+            <svg class="w-8 h-8 text-on-primary transform group-hover:-rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+        `;
+        document.body.appendChild(customChatBtn);
+
+        customChatBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const widgets = document.querySelectorAll('chat-widget');
+            widgets.forEach(widget => {
+                if (widget.shadowRoot) {
+                    // Make sure it's the chat widget, not voice
+                    const shadowHTML = widget.shadowRoot.innerHTML.toLowerCase();
+                    const isVoice = shadowHTML.includes('microphone') || shadowHTML.includes('call us');
+                    if (!isVoice) {
+                        const chatBubbleBtn = widget.shadowRoot.querySelector('#lc_text-widget--btn, .lc_text-widget--bubble');
+                        if (chatBubbleBtn) chatBubbleBtn.click();
+                    }
+                }
+            });
+        });
+    }
+
+    // Theme Customization for Regular Chat Widget
+    const bindChatTheme = setInterval(() => {
+      const widgets = document.querySelectorAll('chat-widget');
+      widgets.forEach((widget) => {
+        if (!widget.shadowRoot) return;
+        
+        // Ensure this is the chat widget, not the hidden voice widget
+        const shadowHTML = widget.shadowRoot.innerHTML.toLowerCase();
+        const isVoice = shadowHTML.includes('call us') || shadowHTML.includes('microphone') || shadowHTML.includes('audio') || widget.closest('#voice-widget-container');
+        
+        // If it IS the voice widget, enforce hiding its default bubble since GHL might append it to body
+        if (isVoice && !widget.shadowRoot.querySelector('#ofi-hide-voice-bubble')) {
+          const style = document.createElement('style');
+          style.id = 'ofi-hide-voice-bubble';
+          style.textContent = `
+            #lc_text-widget--btn, .lc_text-widget--btn, [class*="launcher"], [class*="bubble"] {
+              display: none !important;
+              opacity: 0 !important;
+              pointer-events: none !important;
+              position: fixed !important;
+              left: -9999px !important;
+              width: 0 !important;
+              height: 0 !important;
+              overflow: hidden !important;
+            }
+          `;
+          widget.shadowRoot.appendChild(style);
+        }
+
+        if (!isVoice && !widget.shadowRoot.querySelector('#ofi-shadow-theme')) {
           const themeStyle = document.createElement('style');
           themeStyle.id = 'ofi-shadow-theme';
           themeStyle.textContent = `
             :host {
-              --chat-widget-header-color: #0e2b4b !important;
+              --chat-widget-header-color: transparent !important;
               --chat-widget-primary-color: #00e5ff !important;
               --chat-widget-background-color: rgba(0, 20, 43, 0.95) !important;
             }
-            .lc_text-widget--header {
-              background: #0e2b4b !important;
-              border-bottom: 1px solid rgba(0, 229, 255, 0.1) !important;
+            
+            /* HIDE DEFAULT GHL BUBBLE SO OUR CUSTOM ONE SHOWS */
+            #lc_text-widget--btn, .lc_text-widget--bubble { 
+                opacity: 0 !important; 
+                pointer-events: none !important; 
+                transform: scale(0) !important;
+                display: none !important;
             }
-            .lc_text-widget--container {
+
+            .lc_text-widget--header {
+              background: linear-gradient(135deg, rgba(0, 229, 255, 0.15) 0%, rgba(0, 20, 43, 0.95) 100%) !important;
+              border-bottom: 1px solid rgba(0, 229, 255, 0.2) !important;
+            }
+            
+            /* Target ONLY the box container! This prevents the rogue 2px line! */
+            .lc_text-widget--box, .lc_text-widget--box--agency-branding, #lc_text-widget--box {
               background: rgba(0, 20, 43, 0.95) !important;
               backdrop-filter: blur(20px) !important;
               -webkit-backdrop-filter: blur(20px) !important;
-              border: 1px solid rgba(0, 229, 255, 0.08) !important;
+              border: 1px solid rgba(0, 229, 255, 0.3) !important;
               border-radius: 16px !important;
+              box-shadow: 0 0 40px rgba(0, 229, 255, 0.15) !important;
+              overflow: hidden !important;
             }
             .lc_text-widget--body {
               background: transparent !important;
@@ -648,23 +631,18 @@
               background: #00e5ff !important;
               color: #00363d !important;
             }
+            /* Target the powered by footer */
+            .lc_text-widget--agency, .lc_text-widget_agency, [class*="agency"], [class*="footer"], .lc_text-widget_footer {
+              background-color: rgba(0, 20, 43, 0.95) !important;
+              background: rgba(0, 20, 43, 0.95) !important;
+            }
           `;
           widget.shadowRoot.appendChild(themeStyle);
+          clearInterval(bindChatTheme); // Stop polling when applied
         }
       });
-
-      // If voice is bound, stop polling
-      if (voiceBound) clearInterval(bindWidgets);
     }, 500);
 
-    // Safety: stop polling after 15 seconds regardless
-    setTimeout(() => {
-      clearInterval(bindWidgets);
-      // If voice widget never loaded, still show button as a fallback contact link
-      if (!voiceBound) {
-        voiceBtn.onclick = () => { window.location.href = 'contact.html'; };
-        voiceBtn.classList.add('ofi-ready');
-      }
-    }, 15000);
+    setTimeout(() => clearInterval(bindChatTheme), 15000);
   });
 })();
