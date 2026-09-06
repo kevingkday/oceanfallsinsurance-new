@@ -8,6 +8,7 @@
       icon: 'psychology',
       href: 'ai-risk-services.html',
       spokes: [
+        { name: 'AI Infrastructure & Data Centres', icon: 'dns', href: 'ai-infrastructure-data-centre.html', desc: 'Risk and insurance solutions for compute facilities, power & GPUs.' },
         { name: 'AI Model Underperformance', icon: 'monitoring', href: 'ai-model-underperformance.html', desc: 'Coverage for unmet AI performance guarantees.' },
         { name: 'Algorithmic Bias', icon: 'balance', href: 'algorithmic-bias.html', desc: 'Protection against discrimination claims from AI decisions.' },
         { name: 'CyberRisk Elite', icon: 'fingerprint', href: 'cyberrisk-elite.html', desc: 'AI-enhanced cyber liability & breach response.' },
@@ -99,7 +100,8 @@
           </a>`;
       }).join('');
 
-      return `
+            const gridCols = hub.spokes.length >= 5 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-5' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4';
+            return `
         <div class="mega-panel absolute left-0 right-0 top-full bg-slate-900/95 backdrop-blur-2xl border-t border-white/5 shadow-2xl z-40 opacity-0 pointer-events-none transition-all duration-200" data-panel="${idx}" style="transform:translateY(-8px)">
           <div class="max-w-7xl mx-auto px-8 py-8">
             <div class="flex items-center gap-3 mb-6">
@@ -107,7 +109,7 @@
               <span class="text-white font-['Manrope'] font-bold text-lg">${hub.name}</span>
               ${hub.href !== '#' ? `<a href="${hub.href}" class="ml-auto text-xs text-cyan-400 hover:text-white transition-colors font-semibold uppercase tracking-widest">View Hub Overview →</a>` : ''}
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div class="grid ${gridCols} gap-2">
               ${spokeCards}
             </div>
           </div>
