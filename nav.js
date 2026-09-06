@@ -278,7 +278,7 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-white/5 mb-12">
             <div>
               <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Contact</h6>
-              <p class="text-slate-500 text-sm">+1 778-653-8828</p>
+              <p class="text-slate-500 text-sm">+1&nbsp;&nbsp;778-653-8828</p>
               <p class="text-slate-500 text-sm">hello@oceanfallsinsurance.com</p>
             </div>
             <div>
@@ -320,7 +320,7 @@
         <span class="text-white font-['Manrope'] font-bold hidden sm:inline">Ready to protect your business?</span>
         <div class="flex gap-4 items-center w-full sm:w-auto justify-center sm:justify-end">
           <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-3 rounded-full font-bold text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all">Secure a Bespoke Quote</a>
-          <a href="tel:+17786538828" class="text-cyan-400 font-semibold text-sm hidden sm:inline no-underline hover:text-white transition-colors">+1 778-653-8828</a>
+          <a href="tel:+17786538828" class="text-cyan-400 font-semibold text-sm hidden sm:inline no-underline hover:text-white transition-colors">+1&nbsp;&nbsp;778-653-8828</a>
         </div>
       </div>`;
     document.body.appendChild(bar);
