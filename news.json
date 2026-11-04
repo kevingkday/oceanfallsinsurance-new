@@ -1,0 +1,133 @@
+{
+  "lastUpdated": "2026-11-04",
+  "articles": [
+    {
+      "title": "Is systemic cyber risk the next coverage frontier?",
+      "date": "2026-11-03",
+      "source": "Canadian Underwriter",
+      "category": "Cyber Risk",
+      "summary": "Cyber specialists at CFC and Hub look at July's rogue-AI-agent incident and conclude it was contained, not systemic, and that existing cyber policies respond to the loss types involved. Their bigger worry is concentration risk when many firms rely on the same AI vendors and cloud platforms. What this means for your business: list the AI and cloud vendors you depend on and confirm your cyber policy covers outages and breaches that start at a provider.",
+      "url": "https://canadianunderwriter.ca/partner-content/business-lines/cyber-update/is-systemic-cyber-risk-the-next-coverage-frontier/"
+    },
+    {
+      "title": "Why overseas shipping could leave your clients with cargo coverage gaps",
+      "date": "2026-11-02",
+      "source": "Canadian Underwriter",
+      "category": "Cargo & Marine",
+      "summary": "Lockton Canada warns that exporters shifting sales from the U.S. to Europe and Asia face longer ocean transits, more terminal storage and bigger values sitting in one place than their cross-border cargo programs assumed. It also flags rising trailer and cargo theft, much of it never reported. What this means for your business: if your shipping routes have changed, review cargo limits, storage-in-transit cover and delay coverage before the next shipment, not at renewal.",
+      "url": "https://canadianunderwriter.ca/news/risk/why-overseas-shipping-could-leave-your-clients-with-cargo-coverage-gaps/"
+    },
+    {
+      "title": "Bill C-36: what Canada's proposed automated-decision rules would require",
+      "date": "2026-10-31",
+      "source": "AI for Social Good",
+      "category": "AI Risk & Regulation",
+      "summary": "Ottawa's proposed Protecting Privacy and Consumer Data Act would require organizations to publicly describe automated decision systems and explain significant decisions to affected people, with penalties up to the greater of $25 million or 5% of global revenue. It is still awaiting second reading and is a privacy bill, not a full AI law. What this means for your business: if you use software to screen, price or approve customers or staff, start documenting how it works now, since regulatory and privacy claims usually follow new rules.",
+      "url": "https://aiforsocialgood.ca/ai-law-canada/bill-c-36"
+    },
+    {
+      "title": "Brokerages are now cyber targets too, Definity's MacDonald warns",
+      "date": "2026-10-28",
+      "source": "Insurance Business Canada",
+      "category": "Cyber Risk",
+      "summary": "A Definity executive told the IBAO convention that AI tools let attackers scan for weaknesses across thousands of small firms at once, so being small no longer keeps a business off the radar. He pointed to fast-growing privacy liability as a sign of how quickly per-client losses can add up. What this means for your business: assume you are a target, and make sure your cyber limits reflect how many customer records you actually hold.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/cyber/brokerages-are-now-cyber-targets-too-definitys-macdonald-warns-595156.aspx"
+    },
+    {
+      "title": "Cyber insurance's next big surprise?",
+      "date": "2026-10-27",
+      "source": "Canadian Underwriter",
+      "category": "Cyber Risk",
+      "summary": "Aviva and Intact executives at IBAOcon flagged cyber accumulation, where one attack on a shared service provider hits many companies at once, citing a European attack on grocery refrigeration systems. They also noted a wave of U.S. AI exclusions and urged basic prevention like dark-web scans. What this means for your business: ask whether your policy covers losses caused by an attack on a supplier or IT provider, not just on your own systems.",
+      "url": "https://canadianunderwriter.ca/news/risk/cyber-insurances-next-big-surprise/"
+    },
+    {
+      "title": "Partial US tariff relief adds to valuation headaches for Canadian exporters and their insurers",
+      "date": "2026-10-25",
+      "source": "Insurance Business Canada",
+      "category": "Political Risk & Trade Credit",
+      "summary": "A new U.S. proclamation dropped 50% duties on some Canadian goods such as plywood, paper and packaging from Oct. 30 while adding others like valves and carpets. Each swing changes replacement costs, revenue projections and customer finances. What this means for your business: recheck insured values, business-interruption figures, cargo limits and trade credit limits whenever tariffs move, and watch for U.S. buyers under strain.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/breaking-news/partial-us-tariff-relief-adds-to-valuation-headaches-for-canadian-exporters-and-their-insurers-594839.aspx"
+    },
+    {
+      "title": "As rogue AI risks grow, insurers split on covering the damage",
+      "date": "2026-10-22",
+      "source": "Dark Reading",
+      "category": "AI Risk & Regulation",
+      "summary": "Some specialty insurers now sell affirmative AI cover through endorsements, tech E&O wording or standalone policies, while several large carriers are adding ISO exclusions for generative AI to general liability. The article also lists practical controls, from vendor contract reviews to limiting AI tool permissions. What this means for your business: coverage for AI mistakes now depends heavily on which insurer you're with, so it pays to compare wording, not just price.",
+      "url": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage"
+    },
+    {
+      "title": "Canada commercial insurance rates fall for third straight year as market split deepens",
+      "date": "2026-10-21",
+      "source": "Insurance Business Canada",
+      "category": "P&C Market",
+      "summary": "Marsh's index shows Canadian commercial rates fell 6% in Q3 2026, led by an 8% drop in property, as strong insurer results and cheaper reinsurance expand capacity. Clean, Canada-only risks benefit most, while accounts with U.S. exposure, losses or catastrophe-exposed assets see tighter terms. What this means for your business: it's a buyer's market for well-documented risks, so good submission data can win real savings or broader cover at renewal.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/property-insurance/canada-commercial-insurance-rates-fall-for-third-straight-year-as-market-split-deepens-594370.aspx"
+    },
+    {
+      "title": "SME cyber insurance uptake stalls in Canada and everywhere except the US",
+      "date": "2026-10-15",
+      "source": "Insurance Business Canada",
+      "category": "Cyber Risk",
+      "summary": "CFC estimates only about 10-15% of small and mid-sized businesses in Canada carry standalone cyber cover, compared with 30-40% in the U.S., even though owners rank cyber as a top threat. The gap is blamed on how the market sells cover, not on owners being unaware. What this means for your business: if you rely on a small cyber add-on to your package policy, check whether its limits would cover a real ransomware recovery.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/cyber/sme-cyber-insurance-uptake-stalls-in-canada-and-everywhere-except-the-us-593615.aspx"
+    },
+    {
+      "title": "Small businesses insure the building and overlook shutdown and cyber risk, Wawanesa VP says",
+      "date": "2026-10-15",
+      "source": "Insurance Business Canada",
+      "category": "P&C Market",
+      "summary": "A Wawanesa executive says many small businesses insure their premises but leave out business interruption and cyber, often believing they are too small to be targeted. Walking through a worst-case shutdown tends to reveal the gap. What this means for your business: estimate how long you could survive closed after a fire, flood or hack, and make sure income and cyber cover match that number.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/cyber/small-businesses-insure-the-building-and-overlook-shutdown-and-cyber-risk-wawanesa-vp-says-593489.aspx"
+    },
+    {
+      "title": "EU AI Act: AI Omnibus adopted",
+      "date": "2026-10-13",
+      "source": "BSI",
+      "category": "AI Risk & Regulation",
+      "summary": "The EU's AI Omnibus pushes back high-risk AI obligations to December 2027 for standalone systems and August 2028 for AI built into regulated products, but transparency and general-purpose AI rules still apply. Canadian firms selling AI-enabled products or services into Europe remain in scope. What this means for your business: the extra time is a window to build compliance records, and contracts with EU customers may still demand AI Act warranties today.",
+      "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/october/eu-ai-act-ai-omnibus-adopted/"
+    },
+    {
+      "title": "AI exclusions struggle to gain traction",
+      "date": "2026-10-07",
+      "source": "Business Insurance",
+      "category": "AI Risk & Regulation",
+      "summary": "Brokers and carriers including EPIC, Willis, Zurich and Coalition say broad AI exclusions are meeting resistance because AI is now part of everyday operations, and most insurers prefer to handle it through underwriting. Some affirmative AI covers can still act as hidden exclusions. What this means for your business: read any AI language on your renewal closely, because a broker can often negotiate it away or find a market that doesn't use it.",
+      "url": "https://www.businessinsurance.com/ai-exclusions-struggle-to-gain-traction/"
+    },
+    {
+      "title": "Does AI need its own insurance market? Brokers are already finding out",
+      "date": "2026-10-07",
+      "source": "Insurance Business",
+      "category": "Tech E&O",
+      "summary": "Standalone AI liability products from Armilla, Munich Re's aiSure and others now cover model errors, inaccurate outputs and AI agent actions, sometimes paired with cyber and tech E&O. Half of brokers polled expect AI insurance to become a major line of its own. What this means for your business: if you build or resell AI tools, a tech E&O policy alone may not respond to a model failure, so ask about dedicated AI performance cover.",
+      "url": "https://www.insurancebusinessmag.com/us/news/cyber/does-ai-need-its-own-insurance-market-brokers-are-already-finding-out-592662.aspx"
+    },
+    {
+      "title": "CIRA survey: Canadian organizations spend more on cybersecurity, but fewer believe it's enough",
+      "date": "2026-10-06",
+      "source": "CIRA",
+      "category": "Cyber Risk",
+      "summary": "CIRA's 2026 survey of 503 Canadian decision-makers found most raised cybersecurity budgets, yet only 67% think spending keeps pace with threats, down from 74% a year earlier. The share of organizations with very small IT budgets also doubled. What this means for your business: when the budget can't cover every control, insurance and an incident response plan become the backstop, and insurers reward the basics like MFA and backups.",
+      "url": "https://www.cira.ca/en/resources/news/cybersecurity/cira-survey-reveals-canadian-organizations-are-spending-more-on-cybersecurity-but-fewer-believe-its-enough/"
+    },
+    {
+      "title": "Silent or affirmative: the AI coverage debate reshaping Canadian cyber placements",
+      "date": "2026-10-02",
+      "source": "Insurance Business Canada",
+      "category": "AI Risk & Regulation",
+      "summary": "Canadian clients are pushing for cyber wording that names AI and deepfakes, after cases like a US$25.6 million deepfake video-call fraud. Hub's cyber lead explains why some brokers prefer explicit wording and others worry it narrows cover. What this means for your business: confirm your policy covers social-engineering fraud by deepfake voice or video, and train staff to verify payment requests by a second channel.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/cyber/silent-or-affirmative--the-ai-coverage-debate-reshaping-canadian-cyber-placements-592119.aspx"
+    },
+    {
+      "title": "ISO's generative AI exclusion is already on thousands of CGL policies",
+      "date": "2026-09-16",
+      "source": "Insurance Business",
+      "category": "Tech E&O",
+      "summary": "ISO's generative AI exclusions for general liability took effect in January and have been adopted by several major U.S. carriers, with Berkley also using an absolute AI exclusion on D&O and E&O. No standard replacement product yet fills the gap. What this means for your business: map where you use AI before renewal, since exclusions found early are far easier to negotiate than ones found at claim time.",
+      "url": "https://www.insurancebusinessmag.com/us/news/professional-liability/isos-generative-ai-exclusion-is-already-on-thousands-of-cgl-policies-589971.aspx"
+    }
+  ]
+}
