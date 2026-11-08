@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-08",
   "articles": [
+    {
+      "title": "Canada creates earthquake insurance backstop as Carney budget addresses decade-long gap",
+      "date": "2026-11-06",
+      "source": "Insurance Business Canada",
+      "category": "P&C Market",
+      "summary": "Budget 2026 proposes a Canadian Earthquake Insurance Facility that would give the P&C sector up to $50 billion in emergency funding after an extreme quake, closing a gap insurers have flagged since at least 2016. Legislation still has to pass, and IBC and IBAC will help design it. What this means for your business: if you operate in the Lower Mainland or on Vancouver Island, this should steady earthquake capacity over time, but now is the time to check your quake deductible, which is often a percentage of insured value, and your business interruption limits.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/catastrophe/canada-creates-earthquake-insurance-backstop-as-carney-budget-addresses-decadelong-gap-596443.aspx"
+    },
+    {
+      "title": "Ukraine war risk insurance now 10 times more than Second World War Atlantic convoys",
+      "date": "2026-11-06",
+      "source": "Lloyd's List",
+      "category": "Cargo & Marine",
+      "summary": "Lloyd's List reports Black Sea hull war premiums have reached about 20% as attacks intensify, a multi-decade high for any conflict zone. Middle East Gulf rates have eased to roughly 7% to 9% even with an estimated $2.5 billion in claims. What this means for your business: if you buy or sell goods moving through conflict regions, expect war-risk surcharges in freight quotes and confirm whether your cargo policy includes war and strikes cover or excludes those routes.",
+      "url": "https://www.lloydslist.com/LL1158941/Ukraine-war-risk-insurance-now-10-times-more-than-Second-World-War-Atlantic-convoys"
+    },
+    {
+      "title": "Fridge cyber attack turns up heat on demand for cyber triggered physical damage cover",
+      "date": "2026-11-05",
+      "source": "Insurance Times",
+      "category": "Cyber Risk",
+      "summary": "A November 2 attack on remotely managed refrigeration controllers pushed fridge and freezer temperatures up at supermarkets and food shops in six European countries, spoiling stock. CFC says the event shows a coverage gap, because cyber and property policies have long treated the digital trigger and the physical loss separately. What this means for your business: if you rely on connected equipment like refrigeration, HVAC or production controls, ask whether a hack that damages equipment or spoils inventory is covered by your cyber policy, your property policy, or neither.",
+      "url": "https://www.insurancetimes.co.uk/news/fridge-cyber-attack-turns-up-heat-on-demand-for-cyber-triggered-physical-damage-cover/1460176.article"
+    },
+    {
+      "title": "Department of Justice forms AI task force",
+      "date": "2026-11-05",
+      "source": "Nextgov/FCW",
+      "category": "AI Risk & Regulation",
+      "summary": "The U.S. Justice Department has set up a Super Intelligence Task Force to coordinate its criminal and civil enforcement involving AI, set enforcement priorities and write guidance on prosecuting unlawful AI-related conduct. It absorbs the earlier AI Litigation Task Force. What this means for your business: if you sell into the U.S. or use AI in customer-facing decisions, fraud controls or marketing, expect closer regulatory scrutiny and check that your D&O and E&O policies would respond to a government investigation.",
+      "url": "https://www.nextgov.com/artificial-intelligence/2026/11/department-justice-forms-ai-task-force/417074/"
+    },
+    {
+      "title": "Damages related to the use of AI: Italy allows direct lawsuits against the insurer. What's next?",
+      "date": "2026-11-05",
+      "source": "Clyde & Co",
+      "category": "AI Risk & Regulation",
+      "summary": "Since September 30, a new Italian decree lets people harmed by the use of an AI system sue the at-fault party's liability insurer directly. It also lets courts order disclosure of how the AI works and presumes causation when AI Act obligations are breached. Clyde & Co expects more litigation, tighter wordings and AI questions on applications. What this means for your business: even in Canada, expect underwriters to ask more about which AI tools you use and how you supervise them, so keep an inventory of your AI tools ready before renewal.",
+      "url": "https://www.clydeco.com/en/insights/2026/11/damages-related-to-the-use-of-ai-italy-allows-1"
+    },
+    {
+      "title": "Russian hacker group claims to have posted B.C. school district information on dark web",
+      "date": "2026-11-04",
+      "source": "CBC News",
+      "category": "Cyber Risk",
+      "summary": "CBC found what appears to be a database stolen from the Burnaby School District in a September breach posted on the leak site of the Qilin ransomware-as-a-service group. Screenshots show folders such as payroll, discipline and harassment investigations, and the files had been viewed thousands of times. What this means for your business: once data is stolen, it can sit online for weeks, so make sure your cyber policy covers notification, credit monitoring and privacy claims, not just restoring your systems.",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/qilin-burnaby-school-ransomware-9.7409539"
+    },
+    {
+      "title": "'Risk is heightened everywhere': Tokio Marine Kiln's Pavlos Spyropoulos",
+      "date": "2026-11-04",
+      "source": "Insurance Asia News",
+      "category": "Cargo & Marine",
+      "summary": "Tokio Marine Kiln's APAC head says high-tech shipments tied to the AI boom are getting much more valuable and are being stolen more often, even as cargo rates keep falling. He also warns that rates are no longer adequate in some specialty lines, and political violence pricing has already started to firm. What this means for your business: if you ship electronics or other high-value components, check that your per-shipment and warehouse limits match today's values while soft-market pricing lasts.",
+      "url": "https://insuranceasianews.com/risk-is-heightened-everywhere-tokio-marine-kilns-pavlos-spyropoulos/"
+    },
+    {
+      "title": "B.C. privacy watchdog launches investigation into Crime Stoppers data breach",
+      "date": "2026-11-03",
+      "source": "CBC News",
+      "category": "Cyber Risk",
+      "summary": "B.C.'s Information and Privacy Commissioner is investigating whether B.C. Crime Stoppers took reasonable steps under PIPA to protect personal information, after a breach at its tip-platform vendor exposed more than 1.5 million tips nationwide. The federal privacy commissioner is also looking into it. What this means for your business: under B.C. law you remain responsible for personal data your vendors hold for you, so review vendor security terms and confirm your cyber policy covers breaches that happen at a third party.",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/oipc-investigates-crime-stoppers-data-breach-9.7407791"
+    },
+    {
+      "title": "State bill allows consumers to hold AI chatbot providers liable",
+      "date": "2026-11-03",
+      "source": "ABA Journal",
+      "category": "AI Risk & Regulation",
+      "summary": "A proposed New Jersey bill would treat AI chatbots as products under the state's product liability law and allow $5,000 per violation plus action by the attorney general. Lawyers warn that statutory damages without proof of harm could produce large class-style claims. What this means for your business: if you put a chatbot in front of customers, review what it is allowed to say, read your vendor's indemnity, and check whether your liability policies carry AI exclusions.",
+      "url": "https://www.abajournal.com/news/article/new-jersey-bill-allows-consumers-to-hold-ai-chatbots-liable-for-harms"
+    },
     {
       "title": "Is systemic cyber risk the next coverage frontier?",
       "date": "2026-11-03",
@@ -8,6 +80,14 @@
       "category": "Cyber Risk",
       "summary": "Cyber specialists at CFC and Hub look at July's rogue-AI-agent incident and conclude it was contained, not systemic, and that existing cyber policies respond to the loss types involved. Their bigger worry is concentration risk when many firms rely on the same AI vendors and cloud platforms. What this means for your business: list the AI and cloud vendors you depend on and confirm your cyber policy covers outages and breaches that start at a provider.",
       "url": "https://canadianunderwriter.ca/partner-content/business-lines/cyber-update/is-systemic-cyber-risk-the-next-coverage-frontier/"
+    },
+    {
+      "title": "AI agents are moving faster than human oversight – and insurers are taking notice",
+      "date": "2026-11-02",
+      "source": "Insurance Business",
+      "category": "Tech E&O",
+      "summary": "Lockton's AI risk lead says agent-to-agent transactions leave little room for meaningful human review, and some carriers are considering underwriting and pricing agentic AI deployments differently. Supplemental applications increasingly ask for an inventory of AI tools and who is responsible for each one. What this means for your business: if you provide professional or tech services using AI agents, tighten contract liability caps and indemnities first, then confirm your tech E&O limits match how far you have deployed AI.",
+      "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/ai-agents-are-moving-faster-than-human-oversight--and-insurers-are-taking-notice-595827.aspx"
     },
     {
       "title": "Why overseas shipping could leave your clients with cargo coverage gaps",
@@ -18,12 +98,28 @@
       "url": "https://canadianunderwriter.ca/news/risk/why-overseas-shipping-could-leave-your-clients-with-cargo-coverage-gaps/"
     },
     {
+      "title": "Credit insurers face rising insolvencies and tariff swings: Willis Re",
+      "date": "2026-11-01",
+      "source": "Insurance Business Canada",
+      "category": "Political Risk & Trade Credit",
+      "summary": "Willis Re says trade credit loss ratios are returning to long-term norms as claims frequency rises. It points to forecasts of a fifth straight year of rising global insolvencies, oil near US$110, and U.S. tariff shifts. Construction, chemicals, retail and transport are flagged as most at risk. What this means for your business: if a few large customers make up much of your receivables, especially in those sectors or across the border, trade credit insurance or tighter credit terms are worth a look before the new year.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/breaking-news/credit-insurers-face-rising-insolvencies-and-tariff-swings-willis-re-595737.aspx"
+    },
+    {
       "title": "Bill C-36: what Canada's proposed automated-decision rules would require",
       "date": "2026-10-31",
       "source": "AI for Social Good",
       "category": "AI Risk & Regulation",
       "summary": "Ottawa's proposed Protecting Privacy and Consumer Data Act would require organizations to publicly describe automated decision systems and explain significant decisions to affected people, with penalties up to the greater of $25 million or 5% of global revenue. It is still awaiting second reading and is a privacy bill, not a full AI law. What this means for your business: if you use software to screen, price or approve customers or staff, start documenting how it works now, since regulatory and privacy claims usually follow new rules.",
       "url": "https://aiforsocialgood.ca/ai-law-canada/bill-c-36"
+    },
+    {
+      "title": "OpenAI asks B.C. court to quash privacy commissioner investigation of Tumbler Ridge shooting",
+      "date": "2026-10-29",
+      "source": "CBC News",
+      "category": "AI Risk & Regulation",
+      "summary": "OpenAI has petitioned B.C. Supreme Court to quash the provincial privacy commissioner's investigation into how ChatGPT used personal information connected to the Tumbler Ridge shooter. It argues the probe exceeds the commissioner's authority and the production order is overbroad. The case will test how far B.C. privacy law reaches foreign AI services. What this means for your business: regulators are treating how AI tools use personal data as a privacy question, so know what customer data goes into the AI tools you use and what your vendor terms allow.",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/openai-tumbler-ridge-bc-privacy-commissioner-investigation-9.7401870"
     },
     {
       "title": "Brokerages are now cyber targets too, Definity's MacDonald warns",
