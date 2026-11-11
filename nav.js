@@ -52,7 +52,7 @@
         { name: 'Marine & Logistics', icon: 'sailing', href: 'marine-logistics.html', desc: 'Cargo, hull and goods in transit.' },
         { name: 'Environmental Liability', icon: 'eco', href: 'environmental-liability.html', desc: 'Pollution and remediation exposures.' },
         { name: 'Political Risk', icon: 'flag', href: 'political-risk.html', desc: 'Cross-border and political disruption.' },
-        { name: 'Niche & Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Operations that do not fit a standard form.' },
+        { name: 'Niche & Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Fitness, childcare, events and other specialty operations.' },
         { name: 'Medical Malpractice', icon: 'medical_services', href: 'medical-malpractice.html', desc: 'Professional liability for healthcare practices.' },
       ],
     },
@@ -62,7 +62,7 @@
       icon: 'home',
       href: 'personal.html',
       spokes: [
-        { name: 'Travel', icon: 'travel_explore', href: 'global-travel-security.html', desc: 'Travel medical and trip coverage, placed with insurers.' },
+        { name: 'Travel', icon: 'travel_explore', href: 'global-travel-security.html', desc: 'Travel medical and trip cover for Canadians.' },
         { name: 'High-Value Home', icon: 'villa', href: 'high-value-home.html', desc: 'Homes that are hard to place on a standard form.' },
         { name: 'Home Sharing / Rental', icon: 'meeting_room', href: 'home-sharing-rental.html', desc: 'Short-term and home-sharing rentals.' },
       ],
@@ -278,7 +278,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-16">
             <div class="lg:col-span-1">
               <div class="text-lg font-black text-white mb-4 uppercase font-['Manrope']">Ocean Falls</div>
-              <p class="text-slate-500 text-sm leading-relaxed">Independent insurance brokerage in British Columbia. I place cyber and AI coverage for technology companies, and the rest of a commercial or personal account when you need it.</p>
+              <p class="text-slate-500 text-sm leading-relaxed">Cyber and AI insurance for technology companies in British Columbia, plus the rest of a commercial or personal account.</p>
             </div>
             ${hubFooterLinks}
           </div>
@@ -291,7 +291,7 @@
             <div>
               <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Coverage Review</h6>
               <!-- Newsletter signup needs a HighLevel form before it can collect email addresses. -->
-              <p class="text-slate-500 text-sm leading-relaxed mb-3">There is no mailing list on this site yet. Book a review and I will reply directly.</p>
+              <p class="text-slate-500 text-sm leading-relaxed mb-3">Twenty minutes on cyber, tech E&amp;O and AI liability.</p>
               <a class="text-cyan-400 hover:text-white transition-colors text-sm font-semibold" href="contact.html">Book a 20-min review</a>
             </div>
             <div>
@@ -319,7 +319,7 @@
     bar.className = 'fixed bottom-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-xl border-t border-white/10 py-3 px-8 transform translate-y-full transition-transform duration-300';
     bar.innerHTML = `
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <span class="text-white font-['Manrope'] font-bold hidden sm:inline">Want a second look at the wording?</span>
+        <span class="text-white font-['Manrope'] font-bold hidden sm:inline">Twenty minutes on the policies your buyers are asking for.</span>
         <div class="flex gap-4 items-center w-full sm:w-auto justify-center sm:justify-end">
           <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-3 rounded-full font-bold text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all">Book a Coverage Review</a>
           <a href="tel:+17786538828" class="text-cyan-400 font-semibold text-sm hidden sm:inline no-underline hover:text-white transition-colors">+1&nbsp;&nbsp;778-653-8828</a>
@@ -352,7 +352,7 @@
             </div>
             <div class="flex-grow">
               <h3 class="text-white font-['Manrope'] font-bold text-xl mb-2">Cyber and AI coverage</h3>
-              <p class="text-[#bac9cc] text-sm leading-relaxed">I place cyber, tech E&amp;O and AI liability with insurers. If you want the wording read against what you actually ship, book a coverage review.</p>
+              <p class="text-[#bac9cc] text-sm leading-relaxed">Cyber, tech E&amp;O and AI liability, described in the language your engineers already use.</p>
             </div>
             <a href="ai-risk-services.html" class="shrink-0 bg-transparent border border-cyan-400/30 text-cyan-400 px-6 py-3 rounded-full font-bold text-sm no-underline hover:bg-cyan-400/10 transition-colors whitespace-nowrap">Explore AI Risk →</a>
           </div>
