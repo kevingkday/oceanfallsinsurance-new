@@ -4,57 +4,67 @@
   /* ── Hub & Spoke Data ── */
   const hubs = [
     {
-      name: 'AI & Digital Risk',
+      name: 'Tech & AI Companies',
+      short: 'Tech & AI',
+      icon: 'memory',
+      href: 'tech-ai-companies.html',
+      spokes: [
+        { name: 'Tech & AI Companies', icon: 'apartment', href: 'tech-ai-companies.html', desc: 'SaaS, dev shops, AI builders and MSPs.' },
+        { name: 'First enterprise contract', icon: 'handshake', href: 'tech-ai-companies.html#enterprise-contract', desc: 'When a customer contract asks for insurance.' },
+        { name: 'Fundraising', icon: 'trending_up', href: 'tech-ai-companies.html#fundraising', desc: 'What investors and boards usually ask to see.' },
+        { name: 'Launching AI features', icon: 'psychology', href: 'tech-ai-companies.html#launching-ai', desc: 'Cyber, tech E&O and AI liability when you ship AI.' },
+      ],
+    },
+    {
+      name: 'Cyber & AI Risk',
+      short: 'Cyber & AI',
       icon: 'psychology',
       href: 'ai-risk-services.html',
       spokes: [
-        { name: 'AI Infrastructure & Data Centres', icon: 'dns', href: 'ai-infrastructure-data-centre.html', desc: 'Risk and insurance solutions for compute facilities, power & GPUs.' },
-        { name: 'AI Model Underperformance', icon: 'monitoring', href: 'ai-model-underperformance.html', desc: 'Coverage for unmet AI performance guarantees.' },
-        { name: 'Algorithmic Bias', icon: 'balance', href: 'algorithmic-bias.html', desc: 'Protection against discrimination claims from AI decisions.' },
-        { name: 'CyberRisk Elite', icon: 'fingerprint', href: 'cyberrisk-elite.html', desc: 'AI-enhanced cyber liability & breach response.' },
-        { name: 'Regulatory Compliance', icon: 'gavel', href: 'regulatory-compliance.html', desc: 'Navigating evolving AI governance frameworks.' },
+        { name: 'Cyber Insurance', icon: 'fingerprint', href: 'cyberrisk-elite.html', desc: 'Breach, ransomware and social-engineering fraud.' },
+        { name: 'AI Infrastructure & Data Centres', icon: 'dns', href: 'ai-infrastructure-data-centre.html', desc: 'Property and liability for compute facilities.' },
+        { name: 'AI Model Underperformance', icon: 'monitoring', href: 'ai-model-underperformance.html', desc: 'When a model misses a contractual promise.' },
+        { name: 'Algorithmic Bias', icon: 'balance', href: 'algorithmic-bias.html', desc: 'Discrimination claims from automated decisions.' },
+        { name: 'Regulatory Compliance', icon: 'gavel', href: 'regulatory-compliance.html', desc: 'Defence costs when AI rules are in play.' },
       ],
     },
     {
-      name: 'Executive & Professional',
+      name: 'Tech E&O & D&O',
+      short: 'E&O & D&O',
       icon: 'account_balance',
-      href: 'commercial.html',
+      href: 'errors-omissions.html',
       spokes: [
-        { name: 'Directors & Officers (D&O)', icon: 'shield_person', href: 'directors-officers.html', desc: 'Personal asset protection for corporate leadership.' },
-        { name: 'Errors & Omissions (E&O)', icon: 'verified', href: 'errors-omissions.html', desc: 'Professional liability for tech services & software.' },
-        { name: 'Employment Practices (EPLI)', icon: 'groups', href: 'employment-practices.html', desc: 'Defense against workplace discrimination & wrongful termination.' },
-        { name: 'Medical Malpractice', icon: 'medical_services', href: 'medical-malpractice.html', desc: 'Specialized coverage for healthcare professionals.' },
+        { name: 'Tech E&O', icon: 'verified', href: 'errors-omissions.html', desc: 'Professional liability for software and tech services.' },
+        { name: 'Directors & Officers (D&O)', icon: 'shield_person', href: 'directors-officers.html', desc: 'Personal liability cover for directors and officers.' },
+        { name: 'Employment Practices (EPLI)', icon: 'groups', href: 'employment-practices.html', desc: 'Workplace and hiring-related claims.' },
       ],
     },
     {
-      name: 'Specialty Commercial',
-      icon: 'public',
-      href: 'commercial.html',
+      name: 'Other Business Insurance',
+      short: 'Other Business',
+      icon: 'domain',
+      href: 'other-business.html',
       spokes: [
-        { name: 'Political Risk (PRI)', icon: 'flag', href: 'political-risk.html', desc: 'Coverage for geopolitical disruptions & asset seizure.' },
-        { name: 'Environmental Liability', icon: 'eco', href: 'environmental-liability.html', desc: 'Protection against pollution & remediation costs.' },
-        { name: 'Marine & Logistics', icon: 'sailing', href: 'marine-logistics.html', desc: 'Cargo, hull, and supply chain risk solutions.' },
-        { name: 'Niche Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Fitness, daycare, and other specialized verticals.' },
+        { name: 'Commercial Property & Liability', icon: 'store', href: 'commercial.html', desc: 'Property, liability and the everyday commercial book.' },
+        { name: 'Builders Risk', icon: 'apartment', href: 'builders-risk.html', desc: 'Course of construction for projects.' },
+        { name: 'Wrap-Up Liability', icon: 'safety_check', href: 'wrap-up-liability.html', desc: 'One liability program for a multi-party project.' },
+        { name: 'Trades & Contractors', icon: 'engineering', href: 'trades-contractors.html', desc: 'Packages for contractors and trades.' },
+        { name: 'Marine & Logistics', icon: 'sailing', href: 'marine-logistics.html', desc: 'Cargo, hull and goods in transit.' },
+        { name: 'Environmental Liability', icon: 'eco', href: 'environmental-liability.html', desc: 'Pollution and remediation exposures.' },
+        { name: 'Political Risk', icon: 'flag', href: 'political-risk.html', desc: 'Cross-border and political disruption.' },
+        { name: 'Niche & Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Operations that do not fit a standard form.' },
+        { name: 'Medical Malpractice', icon: 'medical_services', href: 'medical-malpractice.html', desc: 'Professional liability for healthcare practices.' },
       ],
     },
     {
-      name: 'Construction',
-      icon: 'construction',
-      href: 'commercial.html',
-      spokes: [
-        { name: 'Builders Risk', icon: 'apartment', href: 'builders-risk.html', desc: 'Course of construction coverage for projects of all sizes.' },
-        { name: 'Wrap-Up Liability', icon: 'safety_check', href: 'wrap-up-liability.html', desc: 'Consolidated liability for multi-stakeholder projects.' },
-        { name: 'Trades & Contractors', icon: 'engineering', href: 'trades-contractors.html', desc: 'Packaged coverage for contractors & subcontractors.' },
-      ],
-    },
-    {
-      name: 'Personal & Travel',
-      icon: 'flight_takeoff',
+      name: 'Personal',
+      short: 'Personal',
+      icon: 'home',
       href: 'personal.html',
       spokes: [
-        { name: 'Global Travel Security', icon: 'travel_explore', href: 'global-travel-security.html', desc: 'Worldwide medical & trip protection via Allianz.' },
-        { name: 'High-Value Home', icon: 'home', href: 'high-value-home.html', desc: 'Hard-to-place & luxury property coverage.' },
-        { name: 'Home Sharing / Rental', icon: 'villa', href: 'home-sharing-rental.html', desc: 'Protection for short-term rental operators.' },
+        { name: 'Travel', icon: 'travel_explore', href: 'global-travel-security.html', desc: 'Travel medical and trip coverage, placed with insurers.' },
+        { name: 'High-Value Home', icon: 'villa', href: 'high-value-home.html', desc: 'Homes that are hard to place on a standard form.' },
+        { name: 'Home Sharing / Rental', icon: 'meeting_room', href: 'home-sharing-rental.html', desc: 'Short-term and home-sharing rentals.' },
       ],
     },
   ];
@@ -70,7 +80,6 @@
     const el = document.getElementById('site-nav');
     if (!el) return;
 
-    const shortNames = ['AI Risk', 'Executive', 'Specialty', 'Construction', 'Personal'];
     const hubLinks = hubs.map((hub, idx) => {
       const active = isActive(hub.href) || isSpokeActive(hub);
       const activeClass = active
@@ -78,8 +87,8 @@
         : 'text-slate-300 hover:text-white';
       return `
         <div class="mega-hub relative" data-hub="${idx}">
-          <button class="mega-hub-btn ${activeClass} font-['Manrope'] tracking-tight font-semibold transition-colors flex items-center gap-1 bg-transparent border-0 cursor-pointer text-sm" data-hub="${idx}">
-            ${shortNames[idx]}
+            <button class="mega-hub-btn ${activeClass} font-['Manrope'] tracking-tight font-semibold transition-colors flex items-center gap-1 bg-transparent border-0 cursor-pointer text-xs xl:text-sm whitespace-nowrap" data-hub="${idx}">
+            ${hub.short}
             <span class="material-symbols-outlined text-xs mega-chevron transition-transform duration-200" style="font-size:16px">expand_more</span>
           </button>
         </div>`;
@@ -105,8 +114,8 @@
         <div class="mega-panel absolute left-0 right-0 top-full bg-slate-900/95 backdrop-blur-2xl border-t border-white/5 shadow-2xl z-40 opacity-0 pointer-events-none transition-all duration-200" data-panel="${idx}" style="transform:translateY(-8px)">
           <div class="max-w-7xl mx-auto px-8 py-8">
             <div class="flex items-center gap-3 mb-6">
-              <span class="material-symbols-outlined text-primary">${hub.icon}</span>
-              <span class="text-white font-['Manrope'] font-bold text-lg">${hub.name}</span>
+              <span class="material-symbols-outlined text-primary">            ${hub.icon}</span>
+              <a href="${hub.href}" class="text-white font-['Manrope'] font-bold text-lg no-underline hover:text-cyan-400">${hub.name}</a>
               ${hub.href !== '#' ? `<a href="${hub.href}" class="ml-auto text-xs text-cyan-400 hover:text-white transition-colors font-semibold uppercase tracking-widest">View Hub Overview →</a>` : ''}
             </div>
             <div class="grid ${gridCols} gap-2">
@@ -116,28 +125,25 @@
         </div>`;
     }).join('');
 
-    const homeActive = isActive('index.html')
+    const linkClass = (href) => isActive(href)
       ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1'
       : 'text-slate-300 hover:text-white';
-    const resourcesActive = isActive('resources.html')
-      ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1'
-      : 'text-slate-300 hover:text-white';
-    const contactActive = isActive('contact.html')
-      ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1'
-      : 'text-slate-300 hover:text-white';
+    const aboutActive = linkClass('about.html');
+    const resourcesActive = linkClass('resources.html');
+    const contactActive = linkClass('contact.html');
 
     el.innerHTML = `
       <nav class="fixed top-0 w-full z-50 bg-slate-900/60 backdrop-blur-xl shadow-[0_4px_40px_rgba(0,0,0,0.04)]" id="main-nav">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
           <a href="index.html" class="text-xl font-bold tracking-tighter text-white uppercase font-['Manrope'] no-underline">Ocean Falls Insurance</a>
-          <div class="hidden lg:flex gap-3 items-center" id="desktop-nav">
-            <a class="${homeActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-sm" href="index.html">Home</a>
+          <div class="hidden lg:flex gap-2 xl:gap-3 items-center" id="desktop-nav">
             ${hubLinks}
-            <a class="${resourcesActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-sm" href="resources.html">Resources</a>
-            <a class="${contactActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-sm" href="contact.html">Contact</a>
+            <a class="${aboutActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-xs xl:text-sm" href="about.html">About</a>
+            <a class="${resourcesActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-xs xl:text-sm" href="resources.html">Insights</a>
+            <a class="${contactActive} font-['Manrope'] tracking-tight font-semibold transition-colors text-xs xl:text-sm" href="contact.html">Contact</a>
           </div>
           <div class="flex items-center gap-4">
-            <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-6 py-2.5 rounded-full font-bold tracking-tight text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all hidden sm:inline-block">Get a Quote</a>
+            <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-5 py-2.5 rounded-full font-bold tracking-tight text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all hidden sm:inline-block">Book a Review</a>
             <button class="lg:hidden text-white" id="mobile-toggle" aria-label="Menu">
               <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
@@ -164,9 +170,10 @@
                 ${hub.spokes.map(s => `<a href="${s.href}" class="flex items-center gap-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors text-sm no-underline"><span class="material-symbols-outlined text-primary-fixed-dim text-lg">${s.icon}</span>${s.name}</a>`).join('')}
               </div>
             </div>`).join('')}
-          <a href="resources.html" class="text-white font-['Manrope'] font-semibold text-lg py-3 border-b border-white/5 no-underline">Resources</a>
+          <a href="about.html" class="text-white font-['Manrope'] font-semibold text-lg py-3 border-b border-white/5 no-underline">About</a>
+          <a href="resources.html" class="text-white font-['Manrope'] font-semibold text-lg py-3 border-b border-white/5 no-underline">Insights</a>
           <a href="contact.html" class="text-white font-['Manrope'] font-semibold text-lg py-3 border-b border-white/5 no-underline">Contact</a>
-          <a href="contact.html" class="mt-6 text-center bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-4 rounded-full font-bold text-lg no-underline">Get a Quote</a>
+          <a href="contact.html" class="mt-6 text-center bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-4 rounded-full font-bold text-lg no-underline">Book a Review</a>
         </div>
       </div>`;
 
@@ -271,7 +278,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mb-16">
             <div class="lg:col-span-1">
               <div class="text-lg font-black text-white mb-4 uppercase font-['Manrope']">Ocean Falls</div>
-              <p class="text-slate-500 text-sm leading-relaxed">Protecting the digital deep with precision and intelligence. Specialized insurance for the 21st century enterprise.</p>
+              <p class="text-slate-500 text-sm leading-relaxed">Independent insurance brokerage in British Columbia. I place cyber and AI coverage for technology companies, and the rest of a commercial or personal account when you need it.</p>
             </div>
             ${hubFooterLinks}
           </div>
@@ -282,28 +289,23 @@
               <p class="text-slate-500 text-sm">hello@oceanfallsinsurance.com</p>
             </div>
             <div>
-              <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Newsletter</h6>
-              <div class="relative">
-                <input class="w-full bg-transparent border-b border-white/10 focus:border-cyan-400 px-0 py-3 text-white placeholder-slate-600 focus:ring-0 transition-all outline-none text-sm" placeholder="Email address" type="email"/>
-                <button class="absolute right-0 top-1/2 -translate-y-1/2 text-cyan-400"><span class="material-symbols-outlined">chevron_right</span></button>
-              </div>
+              <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Coverage Review</h6>
+              <!-- Newsletter signup needs a HighLevel form before it can collect email addresses. -->
+              <p class="text-slate-500 text-sm leading-relaxed mb-3">There is no mailing list on this site yet. Book a review and I will reply directly.</p>
+              <a class="text-cyan-400 hover:text-white transition-colors text-sm font-semibold" href="contact.html">Book a 20-min review</a>
             </div>
             <div>
               <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Quick Links</h6>
               <div class="flex flex-col gap-2">
-                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="resources.html">Resources & Insights</a>
-                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="contact.html">Contact Us</a>
-                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="contact.html">Privacy Policy</a>
-                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="contact.html">Terms of Service</a>
+                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="about.html">About Kevin Day</a>
+                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="resources.html">Insights</a>
+                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="contact.html">Contact</a>
+                <a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="privacy.html">Privacy Policy</a>
               </div>
             </div>
           </div>
           <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-slate-500 font-['Inter'] text-xs tracking-wide">© 2024 Ocean Falls Insurance Limited. All rights reserved.</p>
-            <div class="flex gap-6 text-xs text-slate-500">
-              <span>BC License: 44291-C</span>
-              <span>ISO 31000 Compliant</span>
-            </div>
+            <p class="text-slate-500 font-['Inter'] text-xs tracking-wide leading-relaxed max-w-3xl">© ${new Date().getFullYear()} Ocean Falls Insurance Services Limited. Agency licence LIC-2022-0037261-R01. Ocean Falls Insurance Services Limited is an independent insurance broker licensed in British Columbia. Coverage is provided by insurers and is subject to the terms, conditions and exclusions of the policy.</p>
           </div>
         </div>
       </footer>`;
@@ -317,9 +319,9 @@
     bar.className = 'fixed bottom-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-xl border-t border-white/10 py-3 px-8 transform translate-y-full transition-transform duration-300';
     bar.innerHTML = `
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <span class="text-white font-['Manrope'] font-bold hidden sm:inline">Ready to protect your business?</span>
+        <span class="text-white font-['Manrope'] font-bold hidden sm:inline">Want a second look at the wording?</span>
         <div class="flex gap-4 items-center w-full sm:w-auto justify-center sm:justify-end">
-          <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-3 rounded-full font-bold text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all">Secure a Bespoke Quote</a>
+          <a href="contact.html" class="bg-gradient-to-r from-[#c3f5ff] to-[#00e5ff] text-[#00363d] px-8 py-3 rounded-full font-bold text-sm no-underline hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] transition-all">Book a Coverage Review</a>
           <a href="tel:+17786538828" class="text-cyan-400 font-semibold text-sm hidden sm:inline no-underline hover:text-white transition-colors">+1&nbsp;&nbsp;778-653-8828</a>
         </div>
       </div>`;
@@ -349,8 +351,8 @@
               <span class="material-symbols-outlined text-[#00daf3] text-3xl">psychology</span>
             </div>
             <div class="flex-grow">
-              <h3 class="text-white font-['Manrope'] font-bold text-xl mb-2">AI Risk Advisory Services</h3>
-              <p class="text-[#bac9cc] text-sm leading-relaxed">Discover how our AI-first approach to risk assessment can transform your coverage strategy. Our Human-in-the-Loop methodology ensures 99% document processing accuracy.</p>
+              <h3 class="text-white font-['Manrope'] font-bold text-xl mb-2">Cyber and AI coverage</h3>
+              <p class="text-[#bac9cc] text-sm leading-relaxed">I place cyber, tech E&amp;O and AI liability with insurers. If you want the wording read against what you actually ship, book a coverage review.</p>
             </div>
             <a href="ai-risk-services.html" class="shrink-0 bg-transparent border border-cyan-400/30 text-cyan-400 px-6 py-3 rounded-full font-bold text-sm no-underline hover:bg-cyan-400/10 transition-colors whitespace-nowrap">Explore AI Risk →</a>
           </div>
@@ -374,8 +376,8 @@
                 <span class="material-symbols-outlined" style="color:#00daf3;">calendar_month</span>
               </div>
               <div>
-                <div style="color:#fff;font-family:Manrope;font-weight:700;font-size:16px;">Schedule a Consultation</div>
-                <div style="color:#bac9cc;font-size:12px;margin-top:2px;">Book a time with our specialists</div>
+                <div style="color:#fff;font-family:Manrope;font-weight:700;font-size:16px;">Book a coverage review</div>
+                <div style="color:#bac9cc;font-size:12px;margin-top:2px;">20 minutes with Kevin Day</div>
               </div>
             </div>
             <button id="booking-close" style="background:none;border:none;cursor:pointer;color:#bac9cc;padding:4px;" aria-label="Close">
@@ -419,10 +421,11 @@
       if (!link) return;
       const text = (link.textContent || '').trim().toLowerCase();
       const href = (link.getAttribute('href') || '').toLowerCase();
-      const isQuoteCTA = text.includes('quote') || text.includes('bespoke') || text.includes('discuss ai coverage');
-      const isContactLink = href === 'contact.html';
+      const isQuoteCTA = text.includes('quote') || text.includes('bespoke') || text.includes('coverage review') || text.includes('book a 20') || text.includes('book a review') || text.includes('discuss ai coverage');
+      const isContactLink = href === 'contact.html' || href.indexOf('contact.html#') === 0;
+      const isNavText = text === 'contact' || text === 'insights' || text === 'about' || text === 'privacy policy';
       // Only intercept CTA-style buttons that point to contact, not the nav "Contact" text link
-      if (isQuoteCTA && (isContactLink || !link.getAttribute('href') || link.tagName === 'BUTTON')) {
+      if (isQuoteCTA && !isNavText && (isContactLink || !link.getAttribute('href') || link.tagName === 'BUTTON')) {
         e.preventDefault();
         e.stopPropagation();
         openModal();
