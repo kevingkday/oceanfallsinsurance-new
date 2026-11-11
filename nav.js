@@ -52,7 +52,7 @@
         { name: 'Marine & Logistics', icon: 'sailing', href: 'marine-logistics.html', desc: 'Cargo, hull and goods in transit.' },
         { name: 'Environmental Liability', icon: 'eco', href: 'environmental-liability.html', desc: 'Pollution and remediation exposures.' },
         { name: 'Political Risk', icon: 'flag', href: 'political-risk.html', desc: 'Cross-border and political disruption.' },
-        { name: 'Niche & Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Operations that do not fit a standard form.' },
+        { name: 'Niche & Specialty', icon: 'category', href: 'niche-specialty.html', desc: 'Fitness, childcare, events and other specialty operations.' },
         { name: 'Medical Malpractice', icon: 'medical_services', href: 'medical-malpractice.html', desc: 'Professional liability for healthcare practices.' },
       ],
     },
@@ -291,7 +291,7 @@
             <div>
               <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Coverage Review</h6>
               <!-- Newsletter signup needs a HighLevel form before it can collect email addresses. -->
-              <p class="text-slate-500 text-sm leading-relaxed mb-3">There is no mailing list on this site yet. Book a review and I will reply directly.</p>
+              <p class="text-slate-500 text-sm leading-relaxed mb-3">Book a review and I will reply directly.</p>
               <a class="text-cyan-400 hover:text-white transition-colors text-sm font-semibold" href="contact.html">Book a 20-min review</a>
             </div>
             <div>
