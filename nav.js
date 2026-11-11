@@ -116,7 +116,7 @@
             <div class="flex items-center gap-3 mb-6">
               <span class="material-symbols-outlined text-primary">            ${hub.icon}</span>
               <a href="${hub.href}" class="text-white font-['Manrope'] font-bold text-lg no-underline hover:text-cyan-400">${hub.name}</a>
-              ${hub.href !== '#' ? `<a href="${hub.href}" class="ml-auto text-xs text-cyan-400 hover:text-white transition-colors font-semibold uppercase tracking-widest">View Hub Overview →</a>` : ''}
+              ${hub.href !== '#' ? `<a href="${hub.href}" class="ml-auto text-xs text-cyan-400 hover:text-white transition-colors font-semibold uppercase tracking-widest">View Overview →</a>` : ''}
             </div>
             <div class="grid ${gridCols} gap-2">
               ${spokeCards}
