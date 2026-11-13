@@ -290,7 +290,6 @@
             </div>
             <div>
               <h6 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-4">Coverage Review</h6>
-              <!-- Newsletter signup needs a HighLevel form before it can collect email addresses. -->
               <p class="text-slate-500 text-sm leading-relaxed mb-3">Twenty minutes on cyber, tech E&amp;O and AI liability.</p>
               <a class="text-cyan-400 hover:text-white transition-colors text-sm font-semibold" href="contact.html">Book a 20-min review</a>
             </div>
