@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-15",
   "articles": [
+    {
+      "title": "Why your clients probably aren't covered for AI",
+      "date": "2026-11-13",
+      "source": "Insurance Business",
+      "category": "Tech E&O",
+      "summary": "Carriers including Chubb, Travelers and Berkshire Hathaway have won approval for AI exclusions on general liability forms, and W.R. Berkley has filed an absolute AI exclusion reaching across D&O, E&O and fiduciary lines. With generative AI lawsuits up sharply since 2021, much of the AI exposure businesses assume is covered is now silent or excluded. If your products or operations rely on AI, have your CGL, E&O and professional liability wordings reviewed before renewal, not after a claim.",
+      "url": "https://www.insurancebusinessmag.com/us/news/professional-liability/why-your-clients-probably-arent-covered-for-ai-597354.aspx"
+    },
+    {
+      "title": "Cogeco-owned Oxio suffers data breach, customer data affected",
+      "date": "2026-11-13",
+      "source": "MobileSyrup",
+      "category": "Cyber Risk",
+      "summary": "Internet provider Oxio says hackers breached an account-management vendor that serves it and several other telecom companies, exposing names, addresses, emails and account notes for current and former customers. Oxio's own networks were untouched, yet it still carries the notification and reputational fallout. Your data is only as safe as your vendors, so check that your cyber policy responds to breaches at third-party service providers and that your contracts require vendors to carry their own cover.",
+      "url": "https://mobilesyrup.com/2026/11/13/cogeco-owned-oxio-data-breach-customer-data/"
+    },
+    {
+      "title": "B.C. post-secondary application portal affected by data breach",
+      "date": "2026-11-12",
+      "source": "CBC News",
+      "category": "Cyber Risk",
+      "summary": "EducationPlannerBC took its application system offline after an unauthorized actor accessed applicant names, contact details and gender, an incident it first identified on Nov. 3. Taking systems down limited the damage but disrupted users facing program deadlines. For any B.C. organization running a customer portal, the takeaway is that downtime and notification costs arrive even when no financial data is lost, which is exactly what business interruption and breach response cover in a cyber policy are built for.",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/educationplanner-bc-cybersecurity-incident-9.7419937"
+    },
+    {
+      "title": "The window to improve D&O coverage may be closing, Marsh expert says",
+      "date": "2026-11-12",
+      "source": "Insurance Business Canada",
+      "category": "P&C Market",
+      "summary": "Marsh's Michael Hunziker says the U.S. directors and officers market is quietly stabilizing and Canada is starting to see some upward pricing pressure as carriers consolidate. He also notes that the real D&O exposure from shareholder activism comes from the securities and fiduciary claims that follow a campaign. If your D&O program has gaps in limits, retentions or wording, the soft-market chance to fix them on good terms may not last much longer.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/professional-liability/the-window-to-improve-dando-coverage-may-be-closing-marsh-expert-says-597048.aspx"
+    },
+    {
+      "title": "A major catastrophe can shut down businesses that never took a scratch, HDI expert says",
+      "date": "2026-11-11",
+      "source": "Insurance Business Canada",
+      "category": "P&C Market",
+      "summary": "HDI Global's Ian Rutherford says a major West Coast event would quickly spread from property damage into business interruption, contingent business interruption, marine and liability losses, with port closures and damaged rail corridors among the largest exposures. Port-dependent mining, energy and export businesses could be forced to stop work even if their own sites are untouched. B.C. businesses that rely on the Port of Vancouver or key suppliers should confirm their policies include contingent business interruption with realistic limits and waiting periods.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/catastrophe/a-major-catastrophe-can-shut-down-businesses-that-never-took-a-scratch-hdi-expert-says-596717.aspx"
+    },
+    {
+      "title": "Cyber premiums are falling as AI drives risk higher, BOXX exec warns",
+      "date": "2026-11-10",
+      "source": "Insurance Business Canada",
+      "category": "Cyber Risk",
+      "summary": "BOXX Insurance Canada's Neal Jardine says cyber premiums keep dropping even as AI makes attacks cheaper and faster, and ransomware is again a leading driver of claims costs. In one claim an online retailer was offline for two to three weeks after attackers found an exposed password, and many small firms now get hit through the cloud and software vendors they depend on. Soft pricing is a good time to lock in stronger limits, and every business should know which outside technology could knock it offline for two weeks.",
+      "url": "https://www.insurancebusinessmag.com/ca/news/cyber/cyber-premiums-are-falling-as-ai-drives-risk-higher-boxx-exec-warns-596716.aspx"
+    },
+    {
+      "title": "Cowbell launches standalone AI agent liability policy for SMEs",
+      "date": "2026-11-10",
+      "source": "Insurance Business",
+      "category": "AI Risk & Regulation",
+      "summary": "Cowbell will launch a standalone AI liability policy in January 2027 for U.S. small and mid-sized businesses whose AI agents act beyond their authority, expose data or produce unsafe outputs, covering both first-party losses and third-party claims. The product responds to a market where generative AI exclusions are spreading across general liability forms with little to replace them. Dedicated AI cover is starting to arrive, so businesses deploying AI agents should map where their current cyber, E&O and CGL policies stop.",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/cowbell-launches-standalone-ai-agent-liability-policy-for-smes-596799.aspx"
+    },
+    {
+      "title": "New rules aim to strengthen maritime insurance amid geopolitical tensions",
+      "date": "2026-11-10",
+      "source": "Business Insurance",
+      "category": "Cargo & Marine",
+      "summary": "China has issued a 17-point plan to grow its domestic marine insurance industry, keep more shipping risk with Chinese insurers and push for more yuan-denominated premiums and claims. The guidelines also call for broader cover for geopolitical, cyber, supply chain and Arctic shipping risks. Canadian importers and exporters trading with China may see more cargo placed with Chinese insurers by their counterparties, so confirm who insures goods in transit under your sales terms and that the claims process works for you.",
+      "url": "https://www.businessinsurance.com/new-rules-aim-to-strengthen-maritime-insurance-amid-geopolitical-tensions/"
+    },
+    {
+      "title": "Critics warn of health data privacy concerns as Ottawa ramps up AI strategy",
+      "date": "2026-11-09",
+      "source": "CBC News",
+      "category": "AI Risk & Regulation",
+      "summary": "Health researchers writing in the CMAJ say Bill C-36, Ottawa's proposed replacement for PIPEDA, has gaps that could let companies use personal health data without consent under a broad 'legitimate interest' exception. The bill would also add explanation rights for automated decisions and penalties of up to $25 million or 5% of global revenue. Canadian businesses using AI on customer data should expect tougher privacy scrutiny and make sure their cyber and privacy liability cover addresses regulatory investigations.",
+      "url": "https://www.cbc.ca/news/health/health-data-anonymized-privacy-gaps-9.7412973"
+    },
     {
       "title": "Canada creates earthquake insurance backstop as Carney budget addresses decade-long gap",
       "date": "2026-11-06",
