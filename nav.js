@@ -303,6 +303,24 @@
               </div>
             </div>
           </div>
+          <div class="rounded-2xl border border-white/10 bg-[#00142b] p-8 md:p-10 mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-end">
+              <div>
+                <h3 class="text-2xl md:text-3xl font-['Manrope'] font-bold text-white tracking-tight mb-3">AI &amp; Cyber Risk Brief</h3>
+                <p class="text-[#bac9cc] text-base leading-relaxed font-['Inter']">Monthly: coverage gaps, AI exclusions and real claims, explained by a licensed BC broker.</p>
+              </div>
+              <form class="embeddable-buttondown-form" action="https://buttondown.com/api/emails/embed-subscribe/oceanfallsinsurance" method="post" target="popupwindow" onsubmit="window.open('about:blank','popupwindow','scrollbars=yes,width=800,height=800');return true;">
+                <label for="brief-email-footer" class="block text-xs font-semibold uppercase tracking-widest text-[#00daf3] mb-2 font-['Inter']">Email</label>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <input id="brief-email-footer" class="flex-1 min-w-0 rounded-full bg-[#0e2b4b] border border-white/15 text-white placeholder:text-slate-500 px-5 py-3 text-sm font-['Inter'] focus:outline-none focus:border-[#00daf3]" type="email" name="email" required autocomplete="email" placeholder="you@example.com" aria-describedby="brief-consent-footer"/>
+                  <button class="rounded-full bg-[#00daf3] text-[#00142b] font-['Manrope'] font-bold px-6 py-3 text-sm hover:opacity-90 transition-opacity" type="submit">Subscribe</button>
+                </div>
+                <input type="hidden" name="embed" value="1"/>
+                <p id="brief-consent-footer" class="text-xs text-[#bac9cc] leading-relaxed mt-4 font-['Inter']">By subscribing you agree to receive the monthly brief from Ocean Falls Insurance Services Limited. Unsubscribe anytime.</p>
+                <p class="text-xs text-slate-500 mt-2 font-['Inter']">Unsubscribe anytime. <a class="text-[#00daf3] underline hover:text-white" href="https://buttondown.com/oceanfallsinsurance/archive/" target="_blank" rel="noopener noreferrer">Read the archive</a>.</p>
+              </form>
+            </div>
+          </div>
           <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-slate-500 font-['Inter'] text-xs tracking-wide leading-relaxed max-w-3xl">© ${new Date().getFullYear()} Ocean Falls Insurance Services Limited. Agency licence LIC-2022-0037261-R01. Ocean Falls Insurance Services Limited is an independent insurance broker licensed in British Columbia. Coverage is provided by insurers and is subject to the terms, conditions and exclusions of the policy.</p>
           </div>
